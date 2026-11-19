@@ -1,0 +1,259 @@
+@import "./loading.css";
+@import "admin-lte/dist/css/adminlte.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "@fontsource/inter/latin-400.css";
+@import "@fontsource/inter/latin-600.css";
+@import "@fontsource/inter/latin-700.css";
+
+:root {
+    --admin-ink: #182638;
+    --admin-muted: #536276;
+    --admin-line: #e2e8ee;
+    --admin-bg: #f3f6f9;
+    --admin-nav: #14263b;
+}
+
+.borongin-admin {
+    color: var(--admin-ink);
+    background: var(--admin-bg);
+    font-family: Inter, system-ui, sans-serif;
+    font-size: .925rem;
+}
+
+.borongin-admin .app-sidebar {
+    --lte-sidebar-width: 248px;
+    background: var(--admin-nav);
+}
+
+.borongin-admin .sidebar-brand {
+    min-height: 4.15rem;
+    padding-inline: 1rem;
+    border-bottom-color: #314257;
+    justify-content: flex-start;
+}
+
+.admin-brand {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-weight: 750;
+    letter-spacing: -.035em;
+    text-decoration: none;
+}
+
+.admin-brand:hover {
+    color: #fff;
+}
+
+.admin-brand-mark {
+    display: grid;
+    flex: 0 0 2.1rem;
+    height: 2.1rem;
+    place-items: center;
+    background: #d5f3e7;
+    border-radius: .55rem;
+    color: #173a33;
+    font-size: 1.15rem;
+}
+
+.borongin-admin .sidebar-menu {
+    gap: .2rem;
+}
+
+.borongin-admin .sidebar-menu .nav-header {
+    padding: 1.05rem .7rem .3rem;
+    color: #b0bed0;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+
+.borongin-admin .sidebar-menu .nav-link {
+    color: #e1e9f2;
+    border-radius: .45rem;
+    min-height: 2.55rem;
+    padding: .6rem .7rem;
+    gap: .55rem;
+    display: flex;
+    align-items: center;
+}
+
+.borongin-admin .sidebar-menu .nav-link:is(:hover, :focus-visible) {
+    background: #263e58;
+}
+
+.borongin-admin .sidebar-menu .nav-link.active {
+    background: #344f6b;
+    color: #fff;
+    font-weight: 650;
+}
+
+.borongin-admin .app-header {
+    min-height: 4.15rem;
+    border-bottom: 1px solid var(--admin-line);
+}
+
+.borongin-admin .app-main {
+    background: var(--admin-bg);
+    min-width: 0;
+}
+
+.admin-content {
+    width: 100%;
+    min-width: 0;
+    max-width: 1536px;
+    margin-inline: auto;
+    padding: 1.55rem clamp(.8rem, 2.5vw, 2.5rem) 2.5rem;
+}
+
+.admin-heading h1 {
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    font-weight: 750;
+    letter-spacing: -.04em;
+    margin: 0;
+}
+
+.admin-heading p {
+    margin: .35rem 0 0;
+    color: var(--admin-muted);
+}
+
+.borongin-admin .card {
+    border: 1px solid var(--admin-line);
+    border-radius: .65rem;
+    box-shadow: 0 1px 2px #18263809;
+    min-width: 0;
+}
+
+.borongin-admin .card-header {
+    background: #fff;
+    border-bottom: 1px solid var(--admin-line);
+    padding: .85rem 1.05rem;
+}
+
+.borongin-admin .card-header:first-child {
+    border-radius: .65rem .65rem 0 0;
+}
+
+.borongin-admin .card-title {
+    float: none;
+    font-size: 1.02rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.borongin-admin .table {
+    margin-bottom: 0;
+}
+
+.borongin-admin .table>:not(caption)>*>* {
+    padding: .75rem 1rem;
+    border-color: var(--admin-line);
+}
+
+.borongin-admin .table thead th {
+    background: #f7f9fb;
+    color: #445468;
+    font-size: .77rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.borongin-admin .table tbody tr:last-child>* {
+    border-bottom: 0;
+}
+
+.borongin-admin .form-label {
+    font-weight: 650;
+    margin-bottom: .3rem;
+}
+
+.admin-metric {
+    height: 100%;
+    color: var(--admin-ink);
+    text-decoration: none;
+}
+
+.admin-metric:is(:hover, :focus-visible) {
+    border-color: #879fbe;
+}
+
+.admin-metric-label {
+    display: block;
+    color: var(--admin-muted);
+    font-weight: 650;
+    margin-bottom: .25rem;
+}
+
+.admin-metric-number {
+    font-size: 1.9rem;
+    font-weight: 750;
+    letter-spacing: -.05em;
+    line-height: 1;
+}
+
+.admin-metric-icon {
+    flex: 0 0 2.6rem;
+    height: 2.6rem;
+    border-radius: .55rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.125rem;
+}
+
+.admin-thumb {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: .425rem;
+    background: #edf1f6;
+}
+
+.admin-photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background: #edf1f6;
+    border-radius: .45rem;
+}
+
+.admin-banner {
+    max-width: 100%;
+    max-height: 8.5rem;
+    border-radius: .45rem;
+    object-fit: contain;
+}
+
+.admin-empty {
+    padding: 2.6rem 1rem;
+    text-align: center;
+    color: var(--admin-muted);
+}
+
+.admin-break-lines {
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+.admin-filter {
+    display: grid;
+    grid-template-columns: minmax(10rem, 2fr) auto;
+    gap: .65rem;
+    align-items: end;
+}
+
+.admin-filter[style] {
+    grid-template-columns: minmax(10rem, 2fr) repeat(var(--filter-selects), minmax(8rem, 1fr)) auto;
+}
+
+@media (max-width: 991.98px) {
+    .admin-filter,
+    .admin-filter[style] {
+        grid-template-columns: 1fr;
+    }
+}
+
+.admin-brand-logo { width: 46px; height: 44px; flex-shrink: 0; object-fit: contain; padding: 3px; background: white; border-radius: 5px; }
+.admin-brand-name { font-size: 1rem; letter-spacing: -.025em; }
+.admin-brand-name small { display: block; margin-top: 3px; font-size: .63rem; font-weight: 400; color: #cbd7e3; letter-spacing: 0; }
